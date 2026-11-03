@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Cars · KTH Formula Student</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="cars">
+
+<!-- =============== NAV =============== -->
+<header class="anav" id="anav">
+  <a href="index.html" class="anav__brand">
+    <span class="anav__brand-mark">KTH·FS</span>
+    <span class="anav__brand-sub">Est. 2010 · Stockholm</span>
+  </a>
+  <nav class="anav__links" id="anavLinks">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="cars.html" class="is-current">Cars</a>
+    <a href="team.html">Team</a>
+    <a href="partners.html">Partners</a>
+    <a href="join.html">Join</a>
+  </nav>
+  <div class="anav__actions">
+    <button class="anav__toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="anavLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+<!-- =============== HERO (cursor-aurora + .atrack) =============== -->
+<section class="ahero" id="ahero">
+  <div class="ahero__aurora" aria-hidden="true">
+    <div class="ahero__blob ahero__blob--1"></div>
+    <div class="ahero__blob ahero__blob--2"></div>
+    <div class="ahero__blob ahero__blob--3"></div>
+  </div>
+  <div class="ahero__grid" aria-hidden="true"></div>
+  <div class="ahero__noise" aria-hidden="true"></div>
+
+  <div class="ahero__over">
+    <div class="ahero__eyebrow fade-in">
+      <span>§ Cars</span><span class="sep">·</span>
+      <span>The Hall of Fame</span><span class="sep">·</span>
+      <span>Since 2010</span>
+    </div>
+    <h1 class="ahero__title fade-in" data-delay="1">
+      <span>Fifteen seasons.</span>
+      <span class="serif">Fifteen cars.</span>
+      <span>In order.</span>
+    </h1>
+  </div>
+
+  <div class="ahero__scroll" aria-hidden="true">
+    <span>Scroll</span>
+    <span class="ahero__scroll-line"></span>
+  </div>
+</section>
+
+<!-- =============== TRACK (standalone) =============== -->
+<section class="atrack-wrap">
+  <div class="atrack-wrap__inner">
+    <div class="atrack fade-in" aria-hidden="true">
+      <svg class="atrack__svg" viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="gridC5" width="30" height="30" patternUnits="userSpaceOnUse">
+            <path d="M 30 0 L 0 0 0 30" fill="none" stroke="currentColor" stroke-width="0.3" opacity="0.14"/>
+          </pattern>
+        </defs>
+        <rect width="1200" height="400" fill="url(#gridC5)"/>
+
+        <path class="draw-in" d="M 120 200 C 120 120, 200 80, 280 80 L 460 80 C 520 80, 560 100, 580 140 L 620 220 C 640 260, 680 280, 720 280 L 860 280 C 940 280, 1000 240, 1000 180 C 1000 120, 940 80, 880 80 L 1100 80 C 1150 80, 1160 120, 1140 160 L 1080 260 C 1060 300, 1020 320, 980 320 L 240 320 C 180 320, 120 280, 120 200 Z" fill="none" stroke="currentColor" stroke-width="24" opacity="0.1" stroke-linejoin="round"/>
+        <path class="draw-in" d="M 120 200 C 120 120, 200 80, 280 80 L 460 80 C 520 80, 560 100, 580 140 L 620 220 C 640 260, 680 280, 720 280 L 860 280 C 940 280, 1000 240, 1000 180 C 1000 120, 940 80, 880 80 L 1100 80 C 1150 80, 1160 120, 1140 160 L 1080 260 C 1060 300, 1020 320, 980 320 L 240 320 C 180 320, 120 280, 120 200 Z" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="8,6" opacity="0.6"/>
+        <path class="draw-in" d="M 140 200 C 140 140, 210 100, 300 100 L 440 100 C 490 100, 530 120, 550 150 L 600 235 C 620 270, 660 288, 720 288 L 850 288 C 930 288, 980 250, 980 190 C 980 140, 930 100, 880 100 L 1080 100 C 1120 100, 1130 130, 1120 160 L 1060 250 C 1040 290, 1010 310, 970 310 L 260 310 C 200 310, 140 275, 140 200 Z" fill="none" stroke="currentColor" stroke-width="1" opacity="0.35" stroke-dasharray="2,4"/>
+
+        <g fill="currentColor" opacity="0.65">
+          <circle cx="120" cy="200" r="3"/>
+          <circle cx="280" cy="80" r="3"/>
+          <circle cx="460" cy="80" r="3"/>
+          <circle cx="620" cy="220" r="3"/>
+          <circle cx="720" cy="280" r="3"/>
+          <circle cx="880" cy="80" r="3"/>
+          <circle cx="1100" cy="80" r="3"/>
+          <circle cx="980" cy="320" r="3"/>
+          <circle cx="240" cy="320" r="3"/>
+        </g>
+
+        <text x="140" y="60" font-family="Montserrat" font-weight="700" font-size="10" fill="currentColor" opacity="0.8" letter-spacing="1.6">START · S/F</text>
+        <text x="40" y="203" font-family="Montserrat" font-weight="700" font-size="10" fill="currentColor" opacity="0.8" letter-spacing="1.6" text-anchor="end">POLE</text>
+        <text x="450" y="380" font-family="Montserrat" font-weight="700" font-size="10" fill="currentColor" opacity="0.7" letter-spacing="1.6" text-anchor="middle">SECTOR 1 · TECHNICAL</text>
+        <text x="900" y="380" font-family="Montserrat" font-weight="700" font-size="10" fill="currentColor" opacity="0.7" letter-spacing="1.6" text-anchor="middle">SECTOR 2 · POWER</text>
+      </svg>
+      <div class="atrack__cap">
+        <span>Zeltweg · autocross layout · figure 02</span>
+        <span class="meta"><span class="dot dot--amber"></span>LAP 015 · 68.42s</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============== HALL OF FAME TIMELINE =============== -->
+<section class="ahall-page">
+  <div class="ahall-page__inner">
+    <header class="ash">
+      <span class="ash__num">01</span>
+      <span class="ash__label">Hall of Fame</span>
+      <span class="ash__rule"></span>
+      <span class="ash__meta">3 chapters shown · 15 total</span>
+    </header>
+
+    <div class="chap-stack">
+
+      <article class="chap">
+        <aside class="chap__rail">
+          <div class="chap__badge">Active</div>
+          <div class="chap__num">Ch. 15</div>
+          <div class="chap__spine"></div>
+        </aside>
+        <div>
+          <div class="chap__year">2025</div>
+          <div class="chap__name">DeV19</div>
+          <p class="chap__lede">Fifth-generation electric driverless. The fastest car in programme history to reach shakedown.</p>
+          <div class="chap__diagram">
+            <svg viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
+              <path class="draw-in" d="M60,150 L100,90 L200,70 L240,60 L360,60 L400,55 L500,55 L540,60 L640,70 L700,90 L740,150 L700,180 L580,190 L500,195 L360,195 L240,190 L140,180 L100,180 Z" fill="none" stroke="currentColor" stroke-width="1.4"/>
+              <circle class="draw-in" cx="160" cy="150" r="30" fill="none" stroke="currentColor" stroke-width="1.4"/>
+              <circle class="draw-in" cx="640" cy="150" r="30" fill="none" stroke="currentColor" stroke-width="1.4"/>
+              <path class="draw-in" d="M300,60 L340,20 L460,20 L500,60" fill="none" stroke="currentColor" stroke-width="1.2"/>
+            </svg>
+          </div>
+          <dl class="chap__specs">
+            <div><dt>Mass</dt><dd>218 kg</dd></div>
+            <div><dt>Power</dt><dd>4×35 kW</dd></div>
+            <div><dt>0–100</dt><dd>2.9 s</dd></div>
+            <div><dt>Battery</dt><dd>6.8 kWh</dd></div>
+            <div><dt>Wheelbase</dt><dd>1,530 mm</dd></div>
+            <div><dt>Drivetrain</dt><dd>AWD · Torque vector</dd></div>
+          </dl>
+          <footer class="chap__foot">
+            <div class="chap__foot-block"><span class="chap__foot-label">Campaign</span><span>2024, 2025</span></div>
+            <div class="chap__foot-block"><span class="chap__foot-label">Deploy</span><span>FS Austria · FS Germany</span></div>
+            <div class="chap__foot-block"><span class="chap__foot-label">Class</span><span>Driverless · Electric</span></div>
+          </footer>
+        </div>
+      </article>
+
+      <article class="chap">
+        <aside class="chap__rail">
+          <div class="chap__badge chap__badge--archived">Archived</div>
+          <div class="chap__num">Ch. 14</div>
+          <div class="chap__spine"></div>
+        </aside>
+        <div>
+          <div class="chap__year">2024</div>
+          <div class="chap__name">DeV18</div>
+          <p class="chap__lede">Fourth-generation electric driverless. First car to complete a full driverless campaign.</p>
+          <div class="chap__diagram">
+            <svg viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
+              <path class="draw-in" d="M60,150 L100,90 L200,70 L240,60 L360,60 L400,55 L500,55 L540,60 L640,70 L700,90 L740,150 L700,180 L580,190 L500,195 L360,195 L240,190 L140,180 L100,180 Z" fill="none" stroke="currentColor" stroke-width="1.4"/>
+              <circle class="draw-in" cx="160" cy="150" r="30" fill="none" stroke="currentColor" stroke-width="1.4"/>
+              <circle class="draw-in" cx="640" cy="150" r="30" fill="none" stroke="currentColor" stroke-width="1.4"/>
+              <path class="draw-in" d="M300,60 L340,20 L460,20 L500,60" fill="none" stroke="currentColor" stroke-width="1.2"/>
+            </svg>
+          </div>
+          <dl class="chap__specs">
+            <div><dt>Mass</dt><dd>224 kg</dd></div>
+            <div><dt>Power</dt><dd>4×32 kW</dd></div>
+            <div><dt>0–100</dt><dd>3.1 s</dd></div>
+            <div><dt>Battery</dt><dd>6.4 kWh</dd></div>
+            <div><dt>Wheelbase</dt><dd>1,530 mm</dd></div>
+            <div><dt>Drivetrain</dt><dd>AWD · Torque vector</dd></div>
+          </dl>
+          <footer class="chap__foot">
+            <div class="chap__foot-block"><span class="chap__foot-label">Campaign</span><span>2023, 2024</span></div>
+            <div class="chap__foot-block"><span class="chap__foot-label">Deploy</span><span>FS Austria · FS Germany</span></div>
+            <div class="chap__foot-block"><span class="chap__foot-label">Class</span><span>Driverless · Electric</span></div>
+          </footer>
+        </div>
+      </article>
+
+      <article class="chap">
+        <aside class="chap__rail">
+          <div class="chap__badge chap__badge--archived">Archived</div>
+          <div class="chap__num">Ch. 13</div>
+          <div class="chap__spine"></div>
+        </aside>
+        <div>
+          <div class="chap__year">2023</div>
+          <div class="chap__name">DeV17</div>
+          <p class="chap__lede">Long-cycle programme. Developed across two academic years.</p>
+          <div class="chap__diagram">
+            <svg viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
+              <path class="draw-in" d="M60,150 L100,90 L200,70 L240,60 L360,60 L400,55 L500,55 L540,60 L640,70 L700,90 L740,150 L700,180 L580,190 L500,195 L360,195 L240,190 L140,180 L100,180 Z" fill="none" stroke="currentColor" stroke-width="1.4"/>
+              <circle class="draw-in" cx="160" cy="150" r="30" fill="none" stroke="currentColor" stroke-width="1.4"/>
+              <circle class="draw-in" cx="640" cy="150" r="30" fill="none" stroke="currentColor" stroke-width="1.4"/>
+              <path class="draw-in" d="M300,60 L340,20 L460,20 L500,60" fill="none" stroke="currentColor" stroke-width="1.2"/>
+            </svg>
+          </div>
+          <dl class="chap__specs">
+            <div><dt>Mass</dt><dd>236 kg</dd></div>
+            <div><dt>Power</dt><dd>4×28 kW</dd></div>
+            <div><dt>0–100</dt><dd>3.4 s</dd></div>
+            <div><dt>Battery</dt><dd>5.9 kWh</dd></div>
+            <div><dt>Wheelbase</dt><dd>1,530 mm</dd></div>
+            <div><dt>Drivetrain</dt><dd>AWD · Torque vector</dd></div>
+          </dl>
+          <footer class="chap__foot">
+            <div class="chap__foot-block"><span class="chap__foot-label">Campaign</span><span>2019, 2023</span></div>
+            <div class="chap__foot-block"><span class="chap__foot-label">Deploy</span><span>FS Germany · FS UK</span></div>
+            <div class="chap__foot-block"><span class="chap__foot-label">Class</span><span>Driverless · Electric</span></div>
+          </footer>
+        </div>
+      </article>
+
+      <div class="chap chap--more">
+        <span class="chap__more-eyebrow">Seasons 12 → 01</span>
+        <p>The earlier fleet (combustion, hybrid, and first-generation electric) is in the archive. Ask us for a walkthrough.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =============== RACE HISTORY · results table =============== -->
+<section class="rhist" id="race-history">
+  <div class="rhist__inner">
+    <header class="ash">
+      <span class="ash__num">02</span>
+      <span class="ash__label">Race history</span>
+      <span class="ash__rule"></span>
+      <span class="ash__meta">Formula Student · 2022 → 2026</span>
+    </header>
+
+    <div class="rhist__table">
+      <div class="rhist__head">
+        <span>Series</span>
+        <span>Event</span>
+        <span>When</span>
+        <span>Finish</span>
+        <span>Best lap</span>
+      </div>
+
+      <a href="#" class="rhist__row">
+        <span class="rhist__series">FSG</span>
+        <span class="rhist__name">Hockenheim <em>🇩🇪</em></span>
+        <span class="rhist__when">16 Aug 26</span>
+        <span class="rhist__finish"><strong>4<sup>th</sup></strong></span>
+        <span class="rhist__time">1:24.812</span>
+        <img class="rhist__photo" src="img-compete.jpg" alt="" aria-hidden="true" loading="lazy" />
+      </a>
+
+      <a href="#" class="rhist__row">
+        <span class="rhist__series">FSA</span>
+        <span class="rhist__name">Red Bull Ring <em>🇦🇹</em></span>
+        <span class="rhist__when">25 Jul 26</span>
+        <span class="rhist__finish"><strong>6<sup>th</sup></strong></span>
+        <span class="rhist__time">1:19.447</span>
+        <img class="rhist__photo" src="169.jpg" alt="" aria-hidden="true" loading="lazy" />
+      </a>
+
+      <a href="#" class="rhist__row">
+        <span class="rhist__series">FSUK</span>
+        <span class="rhist__name">Silverstone <em>🇬🇧</em></span>
+        <span class="rhist__when">14 Jul 26</span>
+        <span class="rhist__finish"><strong>3<sup>rd</sup></strong></span>
+        <span class="rhist__time">1:28.902</span>
+        <img class="rhist__photo" src="img-vision.jpg" alt="" aria-hidden="true" loading="lazy" />
+      </a>
+
+      <a href="#" class="rhist__row">
+        <span class="rhist__series">FSN</span>
+        <span class="rhist__name">Assen <em>🇳🇱</em></span>
+        <span class="rhist__when">11 Jul 25</span>
+        <span class="rhist__finish"><strong>2<sup>nd</sup></strong></span>
+        <span class="rhist__time">1:16.284</span>
+        <img class="rhist__photo" src="img-test.jpg" alt="" aria-hidden="true" loading="lazy" />
+      </a>
+
+      <a href="#" class="rhist__row">
+        <span class="rhist__series">FSG</span>
+        <span class="rhist__name">Hockenheim <em>🇩🇪</em></span>
+        <span class="rhist__when">18 Aug 25</span>
+        <span class="rhist__finish"><strong>5<sup>th</sup></strong></span>
+        <span class="rhist__time">1:26.051</span>
+        <img class="rhist__photo" src="img-manufacture.jpg" alt="" aria-hidden="true" loading="lazy" />
+      </a>
+
+      <a href="#" class="rhist__row">
+        <span class="rhist__series">FSA</span>
+        <span class="rhist__name">Red Bull Ring <em>🇦🇹</em></span>
+        <span class="rhist__when">26 Jul 25</span>
+        <span class="rhist__finish"><strong>7<sup>th</sup></strong></span>
+        <span class="rhist__time">1:21.113</span>
+        <img class="rhist__photo" src="img-design.jpg" alt="" aria-hidden="true" loading="lazy" />
+      </a>
+
+      <a href="#" class="rhist__row">
+        <span class="rhist__series">FSG</span>
+        <span class="rhist__name">Hockenheim <em>🇩🇪</em></span>
+        <span class="rhist__when">20 Aug 24</span>
+        <span class="rhist__finish"><strong>9<sup>th</sup></strong></span>
+        <span class="rhist__time">1:28.740</span>
+        <img class="rhist__photo" src="img-compete.jpg" alt="" aria-hidden="true" loading="lazy" />
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- =============== FOOTER =============== -->
+<footer class="afooter">
+  <div class="afooter__inner">
+    <div class="afooter__cta">
+      <div>
+        <span class="afooter__eyebrow">// Ready when you are</span>
+        <h2 class="afooter__title">Come to<br/><em>the&nbsp;garage.</em></h2>
+      </div>
+      <div class="afooter__actions">
+        <a href="mailto:info@kthformulastudent.se" class="abtn abtn--amber abtn--xl">
+          <span>info@kthformulastudent.se</span><span class="abtn__arrow">→</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="afooter__grid">
+      <div class="afooter__col afooter__col--brand">
+        <div class="afooter__brand">KTH Formula Student</div>
+        <p class="afooter__tag">Empowering students to engineer the future of e-mobility.</p>
+      </div>
+      <div class="afooter__col">
+        <div class="afooter__label">Explore</div>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="cars.html">Cars</a>
+        <a href="team.html">Team</a>
+        <a href="partners.html">Partners</a>
+        <a href="join.html">Join</a>
+      </div>
+      <div class="afooter__col">
+        <div class="afooter__label">Visit</div>
+        <div>Brinellvägen 28</div>
+        <div>114 28 Stockholm</div>
+        <div>Sweden</div>
+        <a href="https://maps.google.com/?q=Brinellv%C3%A4gen+28+Stockholm" target="_blank" rel="noopener">Open in maps ↗</a>
+      </div>
+      <div class="afooter__col">
+        <div class="afooter__label">Elsewhere</div>
+        <a href="https://www.instagram.com/kthformulastudent/" target="_blank" rel="noopener">Instagram ↗</a>
+        <a href="https://www.linkedin.com/company/kth-formula-student/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a href="#">YouTube ↗</a>
+      </div>
+    </div>
+
+    <div class="afooter__base">
+      <span>© 2026 KTH Formula Student · Nonprofit · Student-run</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
